@@ -1,5 +1,4 @@
-﻿
--using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Quaternion rotation;
     private bool isWalking;
 
-    [SerializeField] private float turnSpeed = 20f
+    [SerializeField] private float turnSpeed = 20f;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     //Animator event
     private void OnAnimatorMove()
     {
-
+        rb.MovePosition(rb.position + moveDirection * animator.deltaPosition.magnitude);
+        rb.MoveRotation(rotation);
     }
 }
