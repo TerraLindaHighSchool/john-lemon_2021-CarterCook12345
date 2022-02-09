@@ -447,6 +447,7 @@ GameObject:
   - component: {fileID: 2142386932216714072}
   - component: {fileID: 1048560770063748701}
   - component: {fileID: 2246624593604121286}
+  - component: {fileID: 4892879555724000620}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -542,6 +543,20 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &4892879555724000620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6636649826362234960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d87db442af6be8e4a982be8e171e123b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navMeshAgent: {fileID: 2246624593604121286}
+  waypoints: []
 --- !u!1 &6636649826362234962
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,6 +845,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6636649826362393712}
     m_Modifications:
+    - target: {fileID: 1663644928278714035, guid: 8a6f7024e2eb90140bdf570ef653bac8,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 6578991819862863212, guid: 5ee77549cf00dfd4182198289ed40ea8,
+        type: 3}
     - target: {fileID: 4903280789943914309, guid: 8a6f7024e2eb90140bdf570ef653bac8,
         type: 3}
       propertyPath: m_Name
